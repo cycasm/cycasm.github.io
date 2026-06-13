@@ -496,7 +496,9 @@
     @media (max-width: 520px) {
       .content-area { padding: 36px 16px 60px; }
       .card-preview { height: 180px; }
-      .ui-frame { flex: 0 0 160px; height: 290px; }
+      .ui-frame { flex: 0 0 190px; height: 390px; }
+      .ui-frame--wide-mobile { height: 320px; }
+      .ui-frame--web { flex: 0 0 560px; height: 320px; }
     }
 
     [data-scroll-id] { scroll-margin-top: 32px; }
