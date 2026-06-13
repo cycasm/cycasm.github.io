@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyryl's Portfolio</title>
+    <link rel="icon" type="image/webp" href="assets/pictures/herta-profile.webp">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="content-area">
+    <section id="about-me-section">
+        <div class="about-hero">
+            <p class="eyebrow">My Portfolio</p>
+            <h1>Cyryl Macaambac</h1>
+            <p>
+                I'm a BS Information Technology student aspiring to become a mobile developer.
+                My current tech stack spans Android Studio, Unity, VS 2022, VS Code, Java, C#, and Firebase —
+                with basic experience in web development using HTML, CSS, and JavaScript.
+            </p>
+            <div class="tag-row">
+                <span class="tag">Android Studio</span>
+                <span class="tag">Unity</span>
+                <span class="tag">Visual Studio 2022</span>
+                <span class="tag">Java</span>
+                <span class="tag">C#</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">HTML / CSS / JS</span>
+                <span class="tag">Visual Studio Code</span>
+            </div>
+        </div>
+
+        <div class="links-block">
+            <p class="eyebrow">Find me on</p>
+            <ul class="links-row">
+                <li>
+                <a href="https://github.com/cycasm" class="link-button">
+                    <svg class="icon-github" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    GitHub
+                </a>
+                </li>
+                <li>
+                <a href="https://www.linkedin.com/in/cyryl-macaambac-17b2b7364/" class="link-button">
+                    <svg class="icon-linkedin" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                </li>
+                <li>
+                <a href="cycycarias03@gmail.com" class="link-button">
+                    <svg class="icon-email" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.906.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.27h.91c.904 0 1.635.73 1.635 1.636z"/>
+                    </svg>
+                    Gmail
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="projects-block">
+        <p class="eyebrow">Projects</p>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+
+                <div class="project-card active" data-target="capstone" onclick="scrollToProject('capstone')">
+                    <div class="card-preview">
+                        <img src="assets/pictures/previews/capstone-preview.png"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            alt="Oreiro's Garden App UI Preview">
+                        <div class="card-preview-placeholder" style="display:none;">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="2" width="24" height="44" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <rect x="9" y="8" width="18" height="28" rx="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="18" cy="42" r="2" fill="currentColor" opacity="0.4"/>
+                            </svg>
+                            <span>UI Preview</span>
+                        </div>
+                    </div>
+                    <div class="card-meta">
+                        <div class="card-logo">
+                            <img src="assets/pictures/Oreiro temp logo.png"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                alt="Logo">
+                            <span class="card-logo-placeholder" style="display:none;">🌿</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Oreiro's Garden &amp; Landscaping Services App</h3>
+                            <span>Capstone Project</span>
+                        </div>
+                        <div class="card-arrow">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-target="techno" onclick="scrollToProject('techno')">
+                    <div class="card-preview">
+                        <img src="assets/pictures/previews/techno-preview.png"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            alt="Mobile Palengke UI Preview">
+                        <div class="card-preview-placeholder" style="display:none;">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="2" width="24" height="44" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <rect x="9" y="8" width="18" height="28" rx="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="18" cy="42" r="2" fill="currentColor" opacity="0.4"/>
+                            </svg>
+                            <span>UI Preview</span>
+                        </div>
+                    </div>
+                    <div class="card-meta">
+                        <div class="card-logo">
+                            <img src="assets/pictures/transparent_logo.png"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                alt="Logo">
+                            <span class="card-logo-placeholder" style="display:none;">🛒</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Mobile Palengke</h3>
+                            <span>Technopreneurship</span>
+                        </div>
+                        <div class="card-arrow">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-target="nuven" onclick="scrollToProject('nuven')">
+                    <div class="card-preview">
+                        <img src="assets/pictures/previews/nuven-preview.png"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            alt="Attendance Tracking Web App Preview">
+                        <div class="card-preview-placeholder" style="display:none;">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="6" width="40" height="36" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <rect x="8" y="14" width="32" height="20" rx="2" fill="currentColor" opacity="0.15"/>
+                            <rect x="8" y="8" width="8" height="4" rx="1" fill="currentColor" opacity="0.4"/>
+                            </svg>
+                            <span>UI Preview</span>
+                        </div>
+                    </div>
+                    <div class="card-meta">
+                        <div class="card-logo">
+                            <img src="assets/pictures/nuven logo white.png"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                alt="Logo">
+                            <span class="card-logo-placeholder" style="display:none;">📋</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Attendance Tracking Web App</h3>
+                            <span>for Nuven Global</span>
+                        </div>
+                        <div class="card-arrow">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                </div><!-- /carousel-track -->
+            </div><!-- /carousel-wrapper -->
+
+            <div class="carousel-dots" id="carouselDots">
+                <button class="dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
+                <button class="dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
+                <button class="dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
+            </div>
+            </div>
+
+        </section>
+
+        <div class="section-divider"></div>
+
+
+
+        <section id="project-details-section">
+
+            <div class="project-detail-grid" data-scroll-id="capstone">
+                <div class="project-detail-header">
+                    <div class="detail-logo">
+                        <img src="assets/pictures/Oreiro temp logo.png"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            alt="Logo">
+                        <span class="detail-logo-placeholder" style="display:none;">🌿</span>
+                    </div>
+                    <div class="detail-title-block">
+                        <h2 style="color:turquoise;">Oreiro's Garden &amp; Landscaping Services App</h2>
+                        <p class="badge">Capstone Project</p>
+                    </div>
+                </div>
+
+                <div class="ui-scroll-strip">
+                    <div class="ui-frame">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/qjgi6Wy74E4"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-1.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 1">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 1</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-2.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 2">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 2</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-3.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 3">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 3</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-4.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 4">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 4</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-5.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 5">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 5</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-6.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 6">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 6</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-7.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 7">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 7</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-8.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 8">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 8</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-9.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 9">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 9</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-10.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 10">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 10</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-11.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 11">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 11</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-12.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 12">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 12</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-13.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 13">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 13</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-14.jfif"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 14">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 14</span>
+                        </div>
+                    </div>
+                    <div class="ui-frame">
+                        <img src="assets/pictures/screenshots/capstone/capstone-15.jpg"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';"
+                            alt="Screen 15">
+                        <div class="ui-frame-placeholder" style="display:none;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Screen 15</span>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="project-details-body">
+                <div class="detail-row">
+                    <h4>Overview</h4>
+                    <p>
+                        The Oreiro's Garden and Landscaping Services App is an app created for our Capstone Project at STI College Rosario, Cavite. 
+                        It features an ordering system for garden plants and items, project management system for landscaping projects, 3D garden designer, and augmented reality for previewing gardens, all in one Android app. 
+                        It is specifically tailored for our client - <a href="https://www.facebook.com/profile.php?id=100076278186550" style="font-style: italic; color:turquoise">Oreiro's Garden and Landscaping Services</a> located at Tanza, Cavite.
+                    </p>
+                    </div>
+                    <div class="detail-row">
+                    <h4>Role</h4>
+                    <p>Lead Mobile Developer — responsible for UI design, Android and Unity module development, and Firebase integration.</p>
+                    </div>
+                    <div class="detail-row">
+                    <h4>Tech Stack</h4>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Android Studio</span>
+                        <span class="tech-pill">Unity</span>
+                        <span class="tech-pill">Visual Studio 2022</span>
+                        <span class="tech-pill">Java</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-detail-grid" data-scroll-id="techno">
+        <div class="project-detail-header">
+            <div class="detail-logo">
+            <img src="assets/pictures/transparent_logo.png"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                alt="Logo">
+            <span class="detail-logo-placeholder" style="display:none;">🛒</span>
+            </div>
+            <div class="detail-title-block">
+            <h2 style="color:rgb(0, 163, 0)">Mobile Palengke</h2>
+            <p class="badge">Technopreneurship</p>
+            </div>
+        </div>
+
+        <div class="ui-scroll-strip">
+            <div class="ui-frame">
+                <img src="assets/pictures/screenshots/techno/techno-1.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 1">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <span>Screen 1</span>
+                </div>
+            </div>
+            <div class="ui-frame">
+                <img src="assets/pictures/screenshots/techno/techno-2.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 2">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <span>Screen 2</span>
+                </div>
+            </div>
+            <div class="ui-frame">
+                <img src="assets/pictures/screenshots/techno/techno-3.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 3">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <span>Screen 3</span>
+                </div>
+            </div>
+            <div class="ui-frame">
+                <img src="assets/pictures/screenshots/techno/techno-4.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 4">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <span>Screen 4</span>
+                </div>
+            </div>
+            <div class="ui-frame">
+                <img src="assets/pictures/screenshots/techno/techno-5.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 5">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <span>Screen 5</span>
+                </div>
+            </div>
+            <div class="ui-frame">
+                <img src="assets/pictures/screenshots/techno/techno-6.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 6">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <span>Screen 6</span>
+                </div>
+            </div>
+            <div class="ui-frame">
+                <img src="assets/pictures/screenshots/techno/techno-7.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 7">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <span>Screen 7</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-details-body">
+            <div class="detail-row">
+            <h4>Overview</h4>
+            <p>Mobile Palengke is an application developed as part of our Technopreneurship subject. 
+                Although the project remains incomplete, particularly in terms of payment processing, administrative features, and other functionalities, its main goal was to create an ordering platform specifically designed for fresh produce sold in Philippine public markets, commonly known as "palengke".
+                While the project have been discontinued due to challenges in fully conceptualizing and developing the idea, it remains significant to me as it was my first working Android application I built from scratch.
+            </p>
+            </div>
+            <div class="detail-row">
+            <h4>Role</h4>
+            <p>Lead Mobile Developer - responsible for UI design, Android development, and Firebase integration.</p>
+            </div>
+            <div class="detail-row">
+            <h4>Tech Stack</h4>
+            <div class="tech-pills">
+                <span class="tech-pill">Android Studio</span>
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Firebase</span>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="project-detail-grid" data-scroll-id="nuven">
+        <div class="project-detail-header">
+            <div class="detail-logo">
+            <img src="assets/pictures/nuven logo white.png"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                alt="Logo">
+            <span class="detail-logo-placeholder" style="display:none;">📋</span>
+            </div>
+            <div class="detail-title-block">
+            <h2>Attendance Tracking Web App</h2>
+            <p class="badge">for Nuven Global Ent. Corp.</p>
+            </div>
+        </div>
+
+        <div class="ui-scroll-strip">
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-1.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 1">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 1</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--web">
+                <img src="assets/pictures/screenshots/nuven/nuven-9.png" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 2">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 2</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-2.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 3">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 3</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--web">
+                <img src="assets/pictures/screenshots/nuven/nuven-10.png" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 4">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 4</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-3.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 5">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 5</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-4.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 6">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 6</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-5.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 7">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 7</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-6.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 8">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 8</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-7.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 9">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 9</span>
+                </div>
+            </div>
+            <div class="ui-frame ui-frame--wide-mobile">
+                <img src="assets/pictures/screenshots/nuven/nuven-8.jfif" onerror="this.style.display='none'; this.parentElement.querySelector('.ui-frame-placeholder').style.display='flex';" 
+                alt="Screen 10">
+                <div class="ui-frame-placeholder" style="display:none;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="10" width="22" height="12" rx="1" fill="currentColor" opacity="0.15"/></svg>
+                    <span>Screen 10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-details-body">
+            <div class="detail-row">
+            <h4>Overview</h4>
+            <p>This attendance tracking web app is specifically made for Nuven Global Enterprise Corp. during my time as an OJT.
+                It features a time in/out function with location tracking and geofencing. It also has a digital form for requesting leave and overtime.
+                The admin can add users and view every employees' attendance records.
+            </p>
+            </div>
+            <div class="detail-row">
+            <h4>Role</h4>
+            <p>Web Developer - assisted in UI designing and responsible for web development and Firebase integration.</p>
+            </div>
+            <div class="detail-row">
+            <h4>Tech Stack</h4>
+            <div class="tech-pills">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Firebase</span>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+</main>
+
+<script>
+    const track  = document.getElementById('carouselTrack');
+    const cards  = track.querySelectorAll('.project-card');
+    const dots   = document.querySelectorAll('.dot');
+    let current  = 0;
+    let timer    = null;
+
+    function goToSlide(index) {
+        cards[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = index;
+        cards[current].classList.add('active');
+        dots[current].classList.add('active');
+        track.style.transform = `translateX(calc(-${current * 100}% - ${current * 20}px))`;
+        resetTimer();
+    }
+
+    function next() {
+        goToSlide((current + 1) % cards.length);
+    }
+
+    function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 12000);
+    }
+
+    resetTimer();
+
+    function scrollToProject(id) {
+        const target = document.querySelector(`[data-scroll-id="${id}"]`);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    track.addEventListener('mouseenter', () => clearInterval(timer));
+    track.addEventListener('mouseleave', resetTimer);
+</script>
+</body>
+</html>
